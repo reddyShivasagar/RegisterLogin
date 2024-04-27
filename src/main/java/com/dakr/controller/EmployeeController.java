@@ -25,10 +25,10 @@ public class EmployeeController {
 	}
 	
 	
-//	@PostMapping("/login")
-//	public ResponseEntity<?> loginEmployee(@RequestBody LoginDTO loginDTO){
-//		
-//		LoginMessage loginMessage=employeeService.loginEmployee(loginDTO);
-//		return ResponseEntity.ok(loginMessage);
-//	}
+	@PostMapping("/login")
+	public ResponseEntity<?> loginEmployee(@RequestBody LoginDTO loginDTO){
+		
+		LoginMessage loginMessage=employeeService.loginEmployee(loginDTO);
+		return ResponseEntity.ok(loginMessage);
+	}
 }
